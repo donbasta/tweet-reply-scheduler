@@ -1,13 +1,4 @@
-from dataclasses import dataclass
-from datetime import datetime
-
 import requests
-
-
-@dataclass
-class Tweet:
-    id: str
-    date: datetime
 
 
 class BearerAuth(requests.auth.AuthBase):

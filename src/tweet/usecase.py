@@ -1,10 +1,13 @@
-from .context import get_context
-from .db import *
-from .api import *
-from .data import *
+from .repo import *
+from .model import *
+
+from ..context import get_context
+from ..db import *
+from ..api import *
+from ..data import *
 
 
-def run():
+def post_new_tweet_reply():
     try:
         ctx = get_context()
         con = ctx["DB"]
@@ -23,7 +26,3 @@ def run():
 
     finally:
         con.commit()
-
-
-if __name__ == "__main__":
-    run()

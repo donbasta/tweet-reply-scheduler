@@ -1,8 +1,9 @@
-from dotenv import load_dotenv
-from .db import connect_db
-from .model import BearerAuth
-
 import os
+
+from dotenv import load_dotenv
+
+from .db import connect_db
+from .auth.bearer_auth import BearerAuth
 
 
 def get_context():
