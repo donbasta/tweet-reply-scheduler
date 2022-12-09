@@ -1,4 +1,4 @@
-from src.services import *
+from src.commands import *
 
 import argparse
 

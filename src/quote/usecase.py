@@ -3,7 +3,7 @@ from .repo import *
 
 from ..context import get_context
 from ..db import *
-from ..api import *
+from ..tweet.api import *
 from ..data import *
 
 
